@@ -14,6 +14,7 @@ Skills :
 - Patience
 - A little bit of programming
 - Electronic you need to know how to solder
+
 Materials:
 - A 3D printer
 - Electronic stuff like solder & co
@@ -24,8 +25,12 @@ Materials:
 # Instruction
 CyberPunk Logo
 I started with CyberPunk logo, this the link to the STL files and I read how other peoples have done the wiring.
+
 For the 3D print, I used default settings, for the case a classic black PLA and for the top I used a semi transparent PETG (because it was in my stock).
+
 After the soldering of all leds is a big job and a little bit tricky, in my case I have done small part outside of the logo and do the connection when it was easy
+
 I've also tested each time with an default WLED installation on my ESP8266 (it was before my switch to ESP32) if leds are correcly connected.
+
 To resume, it was a little bit boring, but at the end, when you try different effect, you've got a first whaou effect
 
