@@ -132,6 +132,26 @@ Thanks to Mr. Josef Prusa for the 3D printer. For making dreams a reality.
 Thanks to the community from Wled on the Discord (I asked a question less than 2 minutes after I've got the perfect answer)  
 Thanks to the creator of the BME280_v2  
 Thanks to OnShape for this 3D editor  
+Sorry if I miss a trademark or copyright, but I'm not a lawer and I hope this project is only to learn something
+
+Images comes from :
+https://www.flickr.com/photos/stefans02/51039796903
+https://www.deviantart.com/favorisxp/art/Cyberpunk-2077-V-Night-City-animated-wallpaper-1017676737
+https://www.deviantart.com/favorisxp/art/Cyberpunk-2077-Ultimate-Edition-animated-wallpaper-1019620294
+https://www.deviantart.com/rs-eu/art/CYBERPUNK-2077-Panam-V2-919674818
+https://www.deviantart.com/crazyjackaljones/art/Cyberpunk-2077-Night-City-Day-762575039
+https://www.deviantart.com/pixeljeff/art/Cyberpunk-2077-863580549
+https://www.deviantart.com/starl0rd84/art/Night-City-Cyberpunk-2077-849046615
+https://www.deviantart.com/1n-stereo/art/Cyberpunk-2077-365263922
+https://www.deviantart.com/tatteredlurker/art/Bladepunk-Legacy-2077-824967314
+https://www.deviantart.com/rocksdanister/art/Night-City-Cyberpunk-840875135
+https://www.deviantart.com/bartgru89/art/Cyberpunk-2077-Night-City-886209657
+https://www.deviantart.com/bartgru89/art/Cyberpunk-2077-Night-City-886209657
+https://www.deviantart.com/swampgassed/art/Night-City-Cyberpunk-2077-864142424
+https://www.deviantart.com/gregouny/art/Cyberpunk-2077-Night-City-867133443
+https://www.deviantart.com/niles1999/art/Cyberpunk-2077-FanArt-800091799
+https://www.deviantart.com/outadimes/art/Judy-Alvarez-935987411
+https://www.deviantart.com/swampgassed/art/Night-City-Cyberpunk-2077-864142714
 
 
 
