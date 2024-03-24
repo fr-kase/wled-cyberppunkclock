@@ -42,9 +42,10 @@ Wiring on ESP32 S2 Mini
 ![](Docs/ESP-32-S2-Mini-Pin-Connection.png)
 In my module, I used an another mod V2, thanks to [BME280_v2](https://github.com/Aircoookie/WLED/tree/main/usermods/BME280_v2) who provide function to get temparuture and other stuff  
 After the wiring, I created a box for the clock with hole for USB, Pin to connect leg and big hole for the SD card.
-My design is on OnShape, so if you want to remix, feel free. 
+My design is on OnShape, so if you want to remix, feel free.  
+[Bottom](STL/CPC%20-%20Bottom.stl)   
+[TOP](STL/CPC%20-%20Top.stl)   
 [Link to CyberPunk Box](https://cad.onshape.com/documents/0ec2d05544ebf5b75362955c/w/2196f995b413a02e7a25c0e7/e/7b50c2d1ddb9066b0d95971f?renderMode=0&uiState=660030a2cb9cb5171f0dd871)
-
 
 ## The Support
 My idea is to integrate all this into a single object, but I like module parts.  
@@ -52,10 +53,19 @@ Yes, I know I have a 3D printer, so I could print all in a single, but I prefer 
 And yes, I use glue between each part (from a 3D printer man it's could be horrible)  
 But, by this way, you can modify all parts as you need.  
 The mount between the clock and the logo  
-[Link to the mount](https://cad.onshape.com/documents/36fdbed2e2aa1ef3eded8675/w/fec956f36eaeb1502a5425e6/e/0c0e220b4aa753bca2f42ea8?renderMode=0&uiState=66003367c1c4d963c4f2290c)
+[Mount](STL/CPC-Mount.stl)   
+[Link to the mount](https://cad.onshape.com/documents/36fdbed2e2aa1ef3eded8675/w/fec956f36eaeb1502a5425e6/e/0c0e220b4aa753bca2f42ea8?renderMode=0&uiState=66003367c1c4d963c4f2290c)   
 
 For the desgign, on the support I tried to keep an cyberpunk aspect (with a "2" profile)  
+[Support](STL/CPC-Support.stl)   
 [Link to the support](https://cad.onshape.com/documents/31070edaba85cf5046969ab0/w/2220fcad144101c9cb095c4e/e/76bb540df0e3aaddd11e8a31?renderMode=0&uiState=66003331cb9cb5171f0ddf3e)
+
+## The SD Card
+It's straightforward, you need to put your images at the root of the SD card and the name must be : background-XX.jpg (XX = hour)  
+Like : "background-07.jpg".  
+I suggest to resize to 320x240 pixels, but I guess if not the image will centered.   
+Another limit, it's only JPG files   
+Or can use directly images from the SD folder, as you wish:)  
 
 # Story
 This project is started, from my interests. 
