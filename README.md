@@ -132,7 +132,7 @@ Thanks to Mr. Josef Prusa for the 3D printer. For making dreams a reality.
 Thanks to the community from Wled on the Discord (I asked a question less than 2 minutes after I've got the perfect answer)  
 Thanks to the creator of the BME280_v2  
 Thanks to OnShape for this 3D editor  
-Sorry if I miss a trademark or copyright, but I'm not a lawer and I hope this project is only to learn something
+Sorry if I miss a trademark or copyright, but I'm not a lawyer and I hope this project is only to learn something
 
 Images comes from :
 https://www.flickr.com/photos/stefans02/51039796903
