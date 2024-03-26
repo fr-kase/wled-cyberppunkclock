@@ -20,7 +20,27 @@ Materials:
 - Electronic stuff like solder & co  
 - A TFT ili9341 with touch capacity. I used the fantastic [TFT_eSPI library](https://github.com/Bodmer/TFT_eSPI/); a lot of other screens are compatible (check on the project)  
 - A ESP, at the beginning, I used an ESP8266, but due to a lack of memory, I switched to an ESP32 with PS Ram; in my case, it's an ESP32-S2 mini (but there is a lot of ESP32)  
-- An LED strip compatible with [WLED](https://github.com/Aircoookie/WLED) (check the project); in my case I bought a smaller LED WS2812B with only a 5 mm large  
+- An LED strip compatible with [WLED](https://github.com/Aircoookie/WLED) (check the project); in my case I bought a smaller LED WS2812B with only a 5 mm large
+- Optional, a BME280 sensor
+
+Sotfware:
+- Visual Studio Code
+- Platform.io plugin [check the guide from Wled project](https://kno.wled.ge/advanced/compiling-wled/)
+- copy the directory "CyberpunkClock_v2" in the "usermod" directory
+- copy the "platformio_override.ini" on the root (change the name for ESP8266)
+- add in "wled00/usermods_list.cpp" two blocks
+First just before "void registerUsermods()"
+```
+#ifdef USERMOD_CYBERPUNKCLOCK
+#include "../usermods/CyberpunkClock_v2/cpc_v2.h"
+#endif
+```
+Second at the end of file just before the "}"
+```
+  #ifdef USERMOD_CYBERPUNKCLOCK
+  usermods.add(new CPC());
+  #endif
+```
 
 # Instruction
 ## CyberPunk Logo
