@@ -41,6 +41,52 @@ Second at the end of file just before the "}"
   usermods.add(new CPC());
   #endif
 ```
+I have got some errors during the compilation, in the BME280 usermod on the version 0.14 stable release a this moment
+To fix that, I changed from
+```
+  uint8_t  TemperatureDecimals = 0;  // Number of decimal places in published temperaure values
+  uint8_t  HumidityDecimals = 0;    // Number of decimal places in published humidity values
+  uint8_t  PressureDecimals = 0;    // Number of decimal places in published pressure values
+```
+to
+```
+  uint  TemperatureDecimals = 0;  // Number of decimal places in published temperaure values
+  uint  HumidityDecimals = 0;    // Number of decimal places in published humidity values
+  uint  PressureDecimals = 0;    // Number of decimal places in published pressure values
+```
+And on JPEGDecoder.h
+From 
+```
+  #if defined (ARDUINO_ARCH_ESP8266) || defined (ESP32)
+    #define LOAD_FLASH_FS
+    #include <pgmspace.h>
+    #include <FS.h>
+    #include <LittleFS.h>
+    #define SPIFFS LittleFS
+```
+To
+```
+  #if defined (ARDUINO_ARCH_ESP8266) || defined (ESP32)
+    #define LOAD_FLASH_FS
+    #include <pgmspace.h>
+    #include <FS.h>
+    #include <LittleFS.h>
+//    #define SPIFFS LittleFS
+```
+I tried on the pre-release version 0.15.0-b1 and the compilation doesn't work due to missing files html_*.h files
+So I have copyed from previous version all files required on the wled_server.cpp
+```
+#include "html_ui.h"
+#include "html_settings.h"
+#include "html_other.h"
+#ifdef WLED_ENABLE_PIXART
+  #include "html_pixart.h"
+#endif
+#ifndef WLED_DISABLE_PXMAGIC
+  #include "html_pxmagic.h"
+#endif
+#include "html_cpal.h"
+```
 
 # Instruction
 ## CyberPunk Logo
