@@ -331,7 +331,6 @@ class CPC : public Usermod {
       #endif
       #if defined (ESP32)
         Serial.printf("PS Ram Free %d\n",ESP.getFreePsram());
-        free(screenContent);
         screenContent = ( uint16_t*) ps_calloc(112*64, sizeof(uint16_t));
       #endif
       
