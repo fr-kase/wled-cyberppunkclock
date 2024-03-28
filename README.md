@@ -73,20 +73,9 @@ To
     #include <LittleFS.h>
 //    #define SPIFFS LittleFS
 ```
-I tried on the pre-release version 0.15.0-b1 and the compilation doesn't work due to missing files html_*.h files
-So I have copyed from previous version all files required on the wled_server.cpp
-```
-#include "html_ui.h"
-#include "html_settings.h"
-#include "html_other.h"
-#ifdef WLED_ENABLE_PIXART
-  #include "html_pixart.h"
-#endif
-#ifndef WLED_DISABLE_PXMAGIC
-  #include "html_pxmagic.h"
-#endif
-#include "html_cpal.h"
-```
+I tried on the pre-release version 0.15.0-b1 and the compilation doesn't work ...  
+Because I forgot re-install "Node.js" see [the doc](https://kno.wled.ge/advanced/compiling-wled/)   
+So after it works like a charm
 
 # Instruction
 ## CyberPunk Logo
