@@ -324,12 +324,14 @@ class CPC : public Usermod {
       //Depending of your memory, you will have a rounded black for minutes or a transparent effet 
       //The memory on ESP8266 is generally low and on ESP32 we can use PSRAM (please check your ESP specification)      
       Serial.printf("Memory Needed %d\n", (112*64*sizeof(uint16_t)) );
+      free(screenContent);
       #if defined (ESP8266)        
         Serial.printf("Memory Free %d\n",ESP.getFreeHeap());
         //screenContent = ( uint16_t*) calloc(112*64, sizeof(uint16_t)); //Need a lot of Memory, so use if you enougth (like X2)
       #endif
       #if defined (ESP32)
         Serial.printf("PS Ram Free %d\n",ESP.getFreePsram());
+        free(screenContent);
         screenContent = ( uint16_t*) ps_calloc(112*64, sizeof(uint16_t));
       #endif
       
